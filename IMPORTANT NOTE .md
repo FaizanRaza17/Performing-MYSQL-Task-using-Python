@@ -14,9 +14,15 @@ connection = pymysql.connect(
             password="Your_password"
 
 )
+
+
 Once you have created the database then you need to add database name in the connection to use your selected database.
 You can also use any database which is present in your MYSQL.
+
+
 Query should be like this:>
+
+
 connection = pymysql.connect(
             host="Your_host_name",
             user="Your_user_name",
@@ -24,13 +30,18 @@ connection = pymysql.connect(
             database="Your_database_name"
 
 )
+
+
 Another thing you would encounter as a fresher:
+
 if you have perform query that is:>
 
 connection.close()
 
 
 You just need to run connection query again for example:
+
+
 create_table_query = """
 CREATE TABLE IF NOT EXISTS student (
     student_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,6 +54,8 @@ CREATE TABLE IF NOT EXISTS student (
 cur.execute(create_table_query)
 connection.commit()
 connection.close()
+
+
 After this you need to run the connection query.
 Thank You!!
 
