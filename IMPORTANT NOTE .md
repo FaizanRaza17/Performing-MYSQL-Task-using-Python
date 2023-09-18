@@ -1,7 +1,7 @@
 # Performing-MYSQL-Task-using-Python
 IF YOU WANT TO CREATE DATABASE TOO USING PYTHON YOU JUST NEED TO PERFORM THIS STEP:>
 
-create_db_query = "CREATE DATABASE IF NOT EXISTS students"           # HERE students is the database name
+create_db_query = "CREATE DATABASE IF NOT EXISTS students"   ( HERE students is the database name)
 cur.execute(create_db_query)
 connection.commit()
 
